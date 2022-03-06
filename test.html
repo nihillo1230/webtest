@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>clearfix 연습</title>
+
+    <style type="text/css">    
+        h1 {
+            float: left;
+        }
+
+        ul {
+            float: left;
+        }
+        
+        nav::after{
+            display: table;
+            content:'';
+            clear: both;
+        }
+        
+        .con {
+            width: 100px;
+            height: 100px;
+            background: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <h1>제목</h1>
+        <ul>
+            <li>1번</li>
+            <li>2번</li>
+            <li>3번</li>
+        </ul>
+    </nav>
+    <div class="con">
+        컨텐츠
+    </div>
+</body></html>

@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/*reset*/
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+ul{ list-style: none;}
+a{ color: inherit; text-decoration: none;}
+img{ border: 0; vertical-align: top;}
+body{ color: #333;}
+.wrap{ width:1000px;}
+.clearfix::after{ content: ""; display: table; clear: both;}
+
+/*layout*/
+header{ width: 200px; height: 650px; background: #aaa; float: left;}
+.r_con{ width: 800px; height: 650px; background: #bbb; float:left;}
+.r_con .slide{ width: 100%; height: 350px; background: #ccc;}
+.r_con .contents{ width: 100%; height: 200px; background: #ddd;}
+.r_con footer{ width: 100%; height: 100px; background: #eee;}
